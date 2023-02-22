@@ -33,6 +33,8 @@ export const CategoriesProvider = ({ children }) => {
 				return acc;
 			}, {});
 			setCategoriesMap(newCategoriesMap);
+		} else if (error) {
+			console.log(error);
 		}
 	}, [data]);
 
